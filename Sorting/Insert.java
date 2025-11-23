@@ -5,7 +5,7 @@ public class Insert {
         for(int i=1;i<arr.length;i++){
             int pre=i-1;
             int curr=arr[i];
-            while( pre>=0 && arr[pre]>curr ){
+            while( pre>=0 && arr[pre]<curr ){
                 arr[pre+1]=arr[pre];
                 pre--;
     

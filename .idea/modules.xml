@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DSA.iml" filepath="$PROJECT_DIR$/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Linked List/Linked List.iml" filepath="$PROJECT_DIR$/Linked List/Linked List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OP/OP.iml" filepath="$PROJECT_DIR$/OP/OP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Patterns/Patterns.iml" filepath="$PROJECT_DIR$/Patterns/Patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Question/Question.iml" filepath="$PROJECT_DIR$/Question/Question.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stacks/Stacks.iml" filepath="$PROJECT_DIR$/Stacks/Stacks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TCS/TCS.iml" filepath="$PROJECT_DIR$/TCS/TCS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pratices/pratices.iml" filepath="$PROJECT_DIR$/pratices/pratices.iml" />
+    </modules>
+  </component>
+</project>

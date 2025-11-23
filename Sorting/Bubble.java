@@ -1,4 +1,4 @@
-//package JAVA.Sorting;
+
 
 public class Bubble {
     static void swap(int arr[],int a,int b){
