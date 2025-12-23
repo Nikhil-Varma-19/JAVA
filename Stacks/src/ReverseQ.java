@@ -57,11 +57,8 @@ public class ReverseQ {
         s1.push(1);
         s1.push(2);
         s1.push(3);
-//        while (!s1.isEmpty()){
-//            System.out.println(s1.pop());
-//        }
-//        reverseStackRes(s1);
-//        printStack(s1);
+        reverseStackRes(s1);
+        printStack(s1);
 
 
 

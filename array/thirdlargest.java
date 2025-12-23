@@ -9,10 +9,10 @@ public class thirdlargest {
                 third=second;
                 second=first;
                 first=arr[i];
-            } else if (arr[i]>second /*&& arr[i] != first*/ ) {
+            } else if (arr[i]>second && arr[i] != first) {
                 third=second;
                 second=arr[i];
-            } else if (arr[i]>third /*&&  arr[i] != first &&  arr[i] != second*/) {
+            } else if (arr[i]>third &&  arr[i] != first &&  arr[i] != second) {
                 third=arr[i];
             }
         }
@@ -42,7 +42,7 @@ public class thirdlargest {
         return arr[arr.length - 1];
     }
     public static void main(String[] args) {
-        int arr[]={1,5,9,44,55,33,7,100};
+        int arr[]={1,5,9,44,55,33,7,100,100};
       System.out.println("my "+thirdlargeElm(arr));
         System.out.println("gpt "+thirdLargest(arr));
     }

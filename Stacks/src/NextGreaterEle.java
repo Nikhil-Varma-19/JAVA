@@ -6,7 +6,6 @@ public class NextGreaterEle {
     static int[] nextGreaterElementRight(int[] ele){
         int[] ans=new int[ele.length];
         Stack<Integer> s=new Stack<>();
-        
         for (int i = ele.length -1; i >=0; i--) { // for next greater left 0 to ele.length
             int currentEle=ele[i];
             while (!s.isEmpty() && currentEle > ele[s.peek()] ){ // for next smallest ele in right change ">" to "<"

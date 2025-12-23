@@ -38,7 +38,7 @@ public class QuestionMark {
 
 
     public static void main(String[] args) {
-        String s = "acc?7??sss??3rr1????5";
+        String s = "acc?7??sss?3rr1???5";
         System.out.println(questionMark(s));
 
 

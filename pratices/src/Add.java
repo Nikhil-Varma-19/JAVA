@@ -23,7 +23,7 @@ public class Add {
         return "false";
     }
     public static void main(String[] args) {
-        int arr[]={5, 7, 16, 1, 2};
+        int arr[]={5, 7, 16, 2, 2};
         System.out.println(addtoget(arr));
     }
 }

@@ -63,9 +63,9 @@ public class maxsubarrysum {
 
     public static void main(String args[]){
         int num[]={-2,1,-3,4,-1,2,1,-5,4};
-        //subArray(num);
+        subArray(num);
       //  prefixsubArray(num);
-         kadanes(num);
+//         kadanes(num);
     }
 
 }

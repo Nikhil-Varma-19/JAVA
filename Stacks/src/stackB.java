@@ -320,8 +320,8 @@ public class stackB {
         System.out.println( duplicateParethesse(str1));
  */
         //Max area of rectangle
-        int height[]={2,1,5,6,2,3};
-        System.out.println( maxRectangleA(height));
+//        int height[]={2,1,5,6,2,3};
+//        System.out.println( maxRectangleA(height));
 
     }
 
