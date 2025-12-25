@@ -1,4 +1,7 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Sorting {
     static  void bubbleSorting1(int[] arr){
@@ -132,12 +135,50 @@ public class Sorting {
         arr[j] = temp;
     }
 
+    static void bucketSort(int[] arr){
+        int max = arr[0];
+        int shift = arr[0];
+
+        for(int ele : arr){
+            max = Math.max(max,ele);
+            shift = Math.min(shift,ele);
+        }
+
+        max-=shift;
+
+        int k = 5;
+
+        List<List<Integer>> buckets = new ArrayList<>(k);
+
+        for(int i = 0; i < k; i++){
+            buckets.add(new ArrayList<>());
+        }
+
+        for (int ele : arr){
+            int bucketIndx = (int) ((ele - shift) * k / max) ;
+            if(bucketIndx == k) bucketIndx--;
+            buckets.get(bucketIndx).add(ele);
+        }
+
+        List<Integer> res = new ArrayList<>();
+
+        for (int i = 0; i < buckets.size(); i++) {
+            Collections.sort(buckets.get(i));
+            res.addAll(buckets.get(i));
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = res.get(i);
+        }
+    }
+
     public static void main(String[] args) {
-        int[] arr = {8,1,5,1,4,1,2,4,2,6,2,8,3,9,7,5,1,4,5,2,-100,100};
+        int[] arr = {7,8,9,5,4,5,3};
 //        bubbleSorting2(arr);
 //        selectionSort(arr);
 //        insertingSort(arr);
-        countingSortN(arr);
+//        countingSortN(arr);
+        bucketSort(arr);
         System.out.println(Arrays.toString(arr));
     }
 }
