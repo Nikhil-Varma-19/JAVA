@@ -328,7 +328,7 @@ public class LL {
   }
 
   public static void main(String[] args) {
-/*
+
     LL linkedList = new LL();
     linkedList.addFirst(2);
     linkedList.addLast(3);
@@ -342,7 +342,7 @@ public class LL {
     linkedList.printLinkedList();
     System.out.println("Size of LL " + size);
 
-*/
+
     /*  Search key   */
     //    start
 
@@ -368,7 +368,7 @@ public class LL {
     // ---->      // Reverse the Linked List
     //start
 
-    LL Linkedlist = new LL();
+//    LL Linkedlist = new LL();
 //    Linkedlist.addLast(1);
 //    Linkedlist.addLast(2);
 //    Linkedlist.addLast(3);
