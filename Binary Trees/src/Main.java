@@ -15,7 +15,7 @@ public class Main {
         }
     }
 
-    static class BinaryTree {
+      static class BinaryTree {
         static int idx = -1;
 
         public static TreeNode buildBinaryTree(int[] nodes) {
@@ -34,7 +34,7 @@ public class Main {
 
         public static void preOrder(TreeNode root) { // O(n)
             if (root == null) {
-                System.out.printf(-1 + " ");
+//                System.out.printf(-1 + " ");
                 return;
             }
             System.out.printf(root.data + " ");
@@ -235,12 +235,12 @@ public class Main {
 //        BinaryTree.preOrder(root);
 //        BinaryTree.inOrder(root);
 //        BinaryTree.postOrder(root);
-//        BinaryTree.levelOrder(root);
+        BinaryTree.levelOrder(root);
 //        int res = BinaryTree.heightTree(root);
 //        int ans = BinaryTree.countNode(root);
 //        System.out.println(BinaryTree.sumOfNodes(root));
 //        System.out.println(BinaryTree.diameterNode(root));
-        System.out.println(BinaryTree.diameterNode2(root).height);
+//        System.out.println(BinaryTree.diameterNode2(root).height);
 
 
         // without rec
