@@ -83,7 +83,7 @@ public class substring {
 //                System.out.printf(s2.substring(i,j)+" ");
 //            }
 //        }
-        String s="abc";
+        String s="abcde";
         List<String> result = subsequenceshelp(s);
         System.out.println(result);
     }

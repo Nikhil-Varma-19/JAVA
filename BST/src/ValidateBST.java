@@ -3,6 +3,31 @@ import java.util.List;
 
 public class ValidateBST {
 
+    private static Integer last;
+
+    static  boolean isValidHelper(BST.TreeNode root){
+        if(root == null) return true;
+
+        boolean left = isValidHelper(root.left);
+
+        if(!left) return false;
+
+        if(last == null) last = root.data;
+        else{
+            if(root.data > last){
+
+            }else{
+                return false;
+            }
+            last = root.data;
+        }
+
+        boolean right = isValidHelper(root.right);
+
+        return right;
+
+    }
+
     static boolean isValidBST(BST.TreeNode root, BST.TreeNode min, BST.TreeNode max){
         if(root == null) return true;
 
@@ -34,6 +59,8 @@ public class ValidateBST {
 
         System.out.println("BST is valid: "+inOrderApp(root));
         System.out.println("BST is valid: "+isValidBST(root,null,null));
+        last = null;
+        System.out.println("BST is valid: "+isValidHelper(root));
 
 
     }

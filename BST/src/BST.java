@@ -61,5 +61,5 @@ public class BST {
         inOrderInArray(root.left,res);
         res.add(root.data);
         inOrderInArray(root.right,res);
-    }
+     }
 }
