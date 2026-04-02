@@ -8,7 +8,7 @@ public class Sort012 {
     }
 
     public static void main(String[] args) {
-        int[] nums ={2,0,2,1,1,0};
+        int[] nums ={1,0,2,1,1,0};
         int start=0,middle=0,end=nums.length -1;
         while( middle  < end){
             if(nums[middle] == 0){
